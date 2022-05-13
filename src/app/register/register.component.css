@@ -1,0 +1,61 @@
+.register {
+  top: 0;
+  width: 100%;
+  display: block;
+  padding-top: 50px;
+  width: 430px;
+  /* margin-left: 20%; */
+  /* margin-top: 20px */
+}
+
+/* background-repeat: no-repeat; */
+/* background-size: cover; */
+/* overflow: hidden; */
+
+/* height: 100%; */
+/* margin: 0; */
+/* padding: 0; */
+
+
+
+mat-card {
+
+  /* width: 30%; */
+  /* margin: 10% auto; */
+  border-radius: 8px;
+  background-image: url('../../assets/booknow1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+mat-form-field {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+mat-card-content {
+  margin-top: 20px;
+}
+
+.submit {
+  margin-top: 20px;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* .close {
+  margin-top: 20px;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+} */
+
+mat-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

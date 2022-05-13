@@ -1,0 +1,56 @@
+<div class="package-list">
+
+  <div *ngFor="let list of tours">
+
+    <mat-card class="list-of-tours">
+
+      <mat-card-header>
+        <div mat-card-avatar class="header-image"></div>
+        <mat-card-title>
+          {{list.name}}
+        </mat-card-title>
+        <mat-card-subtitle>
+          {{list.quote}}
+        </mat-card-subtitle>
+
+      </mat-card-header>
+
+      <img mat-card-image [src]="list.path">
+
+      <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;">
+        {{list.price}}
+      </p>
+
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font: size 100px; color:blue; font-weight: bolder;">
+              Details
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- <div class="details" *ngFor="let list of detailsOfPackages"> -->
+          
+            <b style="font-size: 20px;">{{list.days}}</b>
+
+            <br><br>
+
+          <p>
+            {{list.context1}}
+          </p>
+          {{list.itinerary}}
+
+          <br><br>
+          <button mat-raised-button color="primary" (click)="openDialog()">
+            Book Now
+          </button>
+          <!-- </div> -->
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        </mat-expansion-panel>
+      </mat-accordion>
+
+    </mat-card>
+
+  </div>
+
+</div>

@@ -1,0 +1,8 @@
+.background{
+    background-image:url(../assets/bg2.jpg) ;
+    height: 85%;
+    width: 100%;
+   background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}

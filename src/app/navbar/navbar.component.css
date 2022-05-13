@@ -1,0 +1,54 @@
+    .spacer{
+        flex: 1 1 auto;
+    }
+
+    .search-box{
+        display: flex;
+        margin: auto 0;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .search-box input{
+        border: none;
+        outline: none;
+        background: white;
+        height: 100%;
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .search-box span{
+        color: #0a5701;
+        font-size: 20px;
+        background: white;
+        height: 20px;
+        padding: 8px;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .search-box span::after{
+
+        height: 100%;
+        width: 0%;
+        content: '';
+        background: #ff003c;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transition: 0.3s;
+    
+    }
+
+    .search-box span:hover:after{
+        width: 100%;
+
+    }
+
+
+
+
+

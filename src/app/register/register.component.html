@@ -1,0 +1,68 @@
+<mat-card class="register">
+    <mat-card-title>
+        Book Now
+    </mat-card-title>
+
+    <mat-card-content>
+        <form [formGroup]="registrationForm">
+
+            <mat-form-field class="form-group">
+                <input matInput placeholder="Name" class="form-control" formControlName="name">
+                <div *ngIf="registrationForm.controls['name'].dirty && registrationForm.controls['name'].hasError('required')">
+                    <span class="is-invalid text-danger">Name is required</span>
+                </div>
+                <mat-icon matSuffix>
+                    user
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <input matInput placeholder="Email ID" class="form-control" formControlName="email">
+                <div *ngIf="registrationForm.controls['email'].dirty && registrationForm.controls['email'].hasError('required')">
+                    <span class="is-invalid text-danger">Email Id is required</span>
+                </div>
+                <mat-icon matSuffix>
+                    email
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <input matInput placeholder="Mobile Number" class="form-control" formControlName="mobile">
+                <div *ngIf="registrationForm.controls['mobile'].dirty && registrationForm.controls['mobile'].hasError('required')">
+                    <span class="is-invalid text-danger">Mobile Number is required</span>
+                </div>
+                <mat-icon matSuffix>
+                    phone
+                </mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <input matInput placeholder="Age" class="form-control" formControlName="age">
+                <div *ngIf="registrationForm.controls['age'].dirty && registrationForm.controls['age'].hasError('required')">
+                    <span class="is-invalid text-danger">Age is required</span>
+                </div>
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <input matInput placeholder="Number of Adults" class="form-control" formControlName="adult">
+                <div *ngIf="registrationForm.controls['adult'].dirty && registrationForm.controls['adult'].hasError('required')">
+                    <span class="is-invalid text-danger">Number of Adults is required</span>
+                </div>
+            </mat-form-field>
+
+            <mat-form-field class="form-group">
+                <input matInput placeholder="Number of Children" class="form-control" formControlName="child">
+                <div *ngIf="registrationForm.controls['child'].dirty && registrationForm.controls['child'].hasError('required')">
+                    <span class="is-invalid text-danger">Number of Children is required</span>
+                </div> 
+            </mat-form-field>
+
+            <button mat-raised-button class="submit" color="primary" (click)="onSubmit()">
+                Submit
+            </button>
+            
+
+        </form>
+    </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,28 @@
+.list-of-tours {
+  width: 430px;
+  margin: 20px;
+}
+
+.header-image {
+  background-image: url('../../assets/logo.jpg');
+  background-size: cover;
+}
+
+.card-img {
+  width: 400px;
+  height: 400px;
+}
+
+.package-list {
+  /* display: flex;
+   flex-wrap: wrap;  */
+  padding-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: lightblue;
+}
+
+.details{
+  font-weight: bolder;
+}
